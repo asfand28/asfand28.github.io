@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Asfand">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <section id="contactme">
+      <h1 id="demo"></h1>
+      <form id= "form" action="" method="get"><p>
+        <fieldset>
+        <legend><strong>Personal Information</strong></legend> <p></p>
+        
+        <label for="firstName" class="xyz">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="John" required>
+        <br></p><p>
+        <label for="lastName" class="xyz">Last Name</label>
+        <input type="text" name="lastName" id="lastName"  placeholder="Doe">
+        <br></p><p>
+        <label for="email" class="xyz">Email</label>
+        <input type="email" name="email" id="email"  placeholder="xyz@gmail.com" required>
+        </p><p><br></p>
+        <label for="age" class="xy">Age</label>
+        <input type="number" name="age" id="age" value="20" 
+        min="14" max="48" step="1" pattern="[0-9]{2}">
+        </p>
+        </fieldset> <br>
+
+        <fieldset>
+        <legend><strong>Career Information</strong></legend> <p></p>
+        <p>Educational Background</p>
+        <input type="radio" name="background" class= "edu" id="student" value="student" required>
+        <label for="student">Student</label> <br>
+        <input type="radio" name="background" class= "edu" id="graduate" value="graduate" required>
+        <label for="graduate">Graduate</label><br>
+        <p><br></p>
+
+        <label for="field">Field of Interest</label><p></p>
+        <select name="field" id="field" required>
+          <optgroup label="Technical">
+            <option value="developer">Web Developer</option>
+            <option value="designer">Web Designer</option>
+            <option value="uiux">UI/UX Designer</option> 
+            <option value="database">Database Developer</option>
+            <option value="back-end">Back-end Developer</option>
+          </optgroup> 
+          <optgroup label="Physical">
+            <option value="Packing">Supply-Chain Management</option>
+            <option value="Service">Waiting & Serving</option>
+          </optgroup>
+          <option value="other">Other</option>
+        </select><br><br><br></p>
+
+
+    <fieldset>
+      <legend><strong>help me improve!</strong></legend>
+      <textarea name="msg" id="msg" cols="40" rows="20" placeholder="Send Me A Message"></textarea>
+  </fieldset><p></p>
+  <button type="submit">submit</button></body>
+  <button type="reset">reset</button>
+
+</body>
+</html>
